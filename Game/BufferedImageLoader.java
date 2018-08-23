@@ -1,0 +1,17 @@
+import java.awt.image.BufferedImage;
+import java.io.IOException;
+import javax.imageio.ImageIO;
+
+public class BufferedImageLoader { //In order to prepare upcoming frames and make them optimised 
+    
+    private BufferedImage image;
+    
+    public BufferedImage loadImage(String path) throws IOException {
+        
+        image = ImageIO.read(getClass().getResource(path));
+
+        return image;
+        
+    }
+    
+}
